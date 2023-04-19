@@ -1,0 +1,45 @@
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'style/Seasons/style9.css' %}">
+</head>
+<aside>
+    <div>
+        <ul>
+            <li style="margin-right: 2px;font-size: 20px; color: red;">پایه نهم</li>
+            <ol>
+                <a href="{% url 'urls:paye9_season1' %}">
+                    <li>فصل 1 : مجموعه ها</li>
+                </a>
+                <a href="{% url 'urls:paye9_season2' %}">
+                    <li>فصل 2 : عدد های حقیقی</li>
+                </a>
+                <a href="{% url 'urls:paye9_season3' %}">
+                    <li>فصل 3 : استدلال و اثبات در هندسه</li>
+                </a>
+                <a href="{% url 'urls:paye9_season4' %}">
+                    <li>فصل 4 : توان و ریشه</li>
+                </a>
+                <a href="{% url 'urls:paye9_season5' %}">
+                    <li>فصل 5 : عبارت های جبری</li>
+                </a>
+                <a href="{% url 'urls:paye9_season6' %}">
+                    <li>فصل 6 : خط و معادله های خطی</li>
+                </a>
+                <a href="{% url 'urls:paye9_season7' %}">
+                    <li>فصل 7 : عبارت های گویا</li>
+                </a>
+                <a href="{% url 'urls:paye9_season8' %}">
+                    <li>فصل 8 : حجم و مساحت</li>
+                </a>
+
+            </ol>
+            <li style="margin-right: 2px;font-size: 20px;"><a href="{% url 'urls:paye7' %}"
+                    style="color: red;">پایه هفتم</a></li>
+            <li style="margin-right: 2px;font-size: 20px;color: red;"><a href="{% url 'urls:paye8' %}"
+                    style="color: red">پایه هشتم</a></li>
+        </ul>
+
+
+    </div>
+
+</aside>

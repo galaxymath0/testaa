@@ -1,0 +1,219 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    /* background-color: red; */
+    width: 100%;
+    height: 60px;
+    background-color: #efefef;
+}
+
+header nav {
+    /* background-color: yellow; */
+    /* width: %; */
+    height: 60px;
+}
+
+header nav ul.navbar-ul {
+    /* background-color: blue; */
+    display: flex;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header a {
+    font-size: 18px;
+}
+
+.li-item {
+    /* margin: 0 80px; */
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li ul {
+    position: absolute;
+}
+
+nav {
+    /* background-color: yellow; */
+}
+
+.navbar-brand {
+    /* background-color: red; */
+    width: 20%;
+    position: absolute;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+
+.navbar-ul li ul {
+    display: none;
+    /* background-color: red; */
+    width: 120px;
+    background-color: #efefef;
+}
+
+.navbar-ul li:hover ul {
+    display: block;
+    border: 1px solid #25252511;
+}
+
+.navbar-ul li ul li {
+    /* margin: 15px; */
+    /* background-color: red; */
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar-ul li ul li:hover {
+    background-color: #cccbcb;
+}
+
+.login-btn {
+    width: 45%;
+    display: flex;
+    /* background-color: blue; */
+    flex-direction: row-reverse;
+}
+
+.login-btn a{
+    padding: 10px 15px;
+    margin: 0 15px;
+    background-color: aqua;
+    border-radius: 25px;
+}
+
+html a{
+    color: black;
+}
+
+article{
+    height: 650px;
+    width: 99%;
+  background-color: white;
+  /* border: solid 3px  black; */
+  margin-right: 7px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 7px;
+}
+ 
+ footer{
+    width: 99%;
+    height: 200px;
+    /* border: solid 3px black; */
+    border-radius: 7px;
+    margin-left: 3px;
+    margin-right: 7px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+ }
+ .h1-titr{
+    font-size: 35px;
+    margin-right: 15px;
+    /* margin-top: 10px; */
+    padding-top:25px;
+
+
+ }
+ .div-books{
+    width: 230px;
+    height: auto;
+    /* border: 2px solid; */
+    margin-top: 75px;
+    margin-right: 160px;
+    /* background-color: rgb(223, 223, 223); */
+    float: right;
+    cursor: pointer;
+    
+    
+ }
+ h2{
+    text-align: center;
+ }
+ .h2-div-book{
+    text-align: center;
+ }
+ .h2-div-book:hover{
+    color: rgb(0, 132, 255);
+ }
+ .div-books-image{
+    width: 230px;
+    height: auto;
+    transition: all 0.5s;
+
+ }
+.div-books-image:hover{
+   
+    transform: rotate(-10deg);
+    
+ }
+ #img-text{
+    width:80px;
+    height: 80px;
+    /* float: right; */
+ }
+ .div3{
+    width: 50px;
+    height: 50px;
+    /* background-color: black; */
+    float: right; 
+    margin-left: 45px;
+    padding-top: 15px;
+
+ }
+ #p-foot{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 7px;
+ }
+ #text-foot{
+    text-align: right;
+    font-size: 35px;
+    margin-top: 20px;
+    margin-right: 10px;
+    float: right;
+ }
+ .p-footer{
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+    float: right;
+ }
+.h1-aside{
+   margin-right: 10px;
+   
+}
+aside div{
+    margin-right: 10px;
+}
+aside ul ol a{
+    transition: all 0.5s;
+}
+aside ul ol a:hover{
+    color: blue;
+   font-size: 15px;
+}

@@ -1,0 +1,209 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    /* background-color: red; */
+    width: 100%;
+    height: 60px;
+    background-color: #efefef;
+}
+
+header nav {
+    /* background-color: yellow; */
+    /* width: %; */
+    height: 60px;
+}
+
+header nav ul.navbar-ul {
+    /* background-color: blue; */
+    display: flex;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header a {
+    font-size: 18px;
+}
+
+.li-item {
+    /* margin: 0 80px; */
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li ul {
+    position: absolute;
+}
+
+nav {
+    /* background-color: yellow; */
+}
+
+.navbar-brand {
+    /* background-color: red; */
+    width: 20%;
+    position: absolute;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+
+.navbar-ul li ul {
+    display: none;
+    /* background-color: red; */
+    width: 120px;
+    background-color: #efefef;
+}
+
+.navbar-ul li:hover ul {
+    display: block;
+    border: 1px solid #25252511;
+}
+
+.navbar-ul li ul li {
+    /* margin: 15px; */
+    /* background-color: red; */
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar-ul li ul li:hover {
+    background-color: #cccbcb;
+}
+
+.login-btn {
+    width: 45%;
+    display: flex;
+    /* background-color: blue; */
+    flex-direction: row-reverse;
+}
+
+.login-btn a{
+    padding: 10px 15px;
+    margin: 0 15px;
+    background-color: aqua;
+    border-radius: 25px;
+}
+
+html a{
+    color: black;
+}
+article{
+    height: 800px;
+    width: 79%;
+  background-color: white;
+  /* border: solid 3px  black; */
+  margin-right: 7px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  
+ }
+ aside{
+ width: 19.5%;
+ height: 450px;
+ background-color: white;
+ float: left;
+ /* border: solid 3px  black; */
+ margin-left: 5px;
+ margin-top: 10px;
+ margin-bottom: 10px;
+ border-radius: 7px;
+ }
+ footer{
+    width: 99%;
+    height: 200px;
+    /* border: solid 3px black; */
+    border-radius: 7px;
+    margin-left: 3px;
+    margin-right: 7px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+ }
+ #p-foot{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 7px;
+ }
+ #text-foot{
+    text-align: right;
+    font-size: 35px;
+    margin-top: 20px;
+    margin-right: 10px;
+    float: right;
+ }
+ .p-footer{
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+    float: right;
+ }
+ .h2-foot{
+    text-align: center;
+    font-size: 35px;
+    /* margin-right: 20px; */
+ }
+ .h1-titr{
+    text-align: center;
+    font-size: 45px;
+    padding-top: 10px;
+ }
+ .h2-titr{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 8px;
+    padding-bottom: 35px;
+ }
+ .h1-video-titr{
+    text-align: center;
+    font-size: 35px;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ .h2-video-titr{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 8px;
+    padding-bottom: 35px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ .div-video{
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;
+    height: 350px;
+ }
+ aside div{
+    padding-right: 20px;
+    
+}
+aside ul ol a{
+    transition: all 0.5s;
+}
+aside ul ol a:hover{
+    color: blue;
+   font-size: 15px;
+}

@@ -1,0 +1,46 @@
+{% load static %}
+{% include 'includes/Fonts-html/Yekan.html' %}
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحه اصلی</title>
+</head>
+
+<body style="background-color:rgb(228, 228, 228)">
+{% include 'includes/header.html' %}
+{% include 'includes/alert.html' %}    
+    <article>
+        <div class="div3">
+            <img src="{% static 'img/index-img/download.png' %}" id="img-text">
+        </div>
+      
+              <h1 class="h1-titr">دانش آموز عزیز لطفا پایه مربوطه خود را انتخاب کنید</h1>
+        <a href="{% url 'urls:paye7' %}">
+      <div class="div-books">
+        <img src="{% static 'img/index-img/c7.jpg' %}" class="div-books-image">
+        <h2 class="h2-div-book">ریاضیات<br>پایه هفتم</h2>
+      </div>
+          </a>
+
+             <a href="{% url 'urls:paye8' %}">
+            <div class="div-books">
+        <img src="{% static 'img/index-img/c8.gif' %}" class="div-books-image">
+        <h2 class="h2-div-book">ریاضیات<br>پایه هشتم</h2>
+         </div>
+        </a>
+
+        <a href="{% url 'urls:paye9' %}">
+                 <div class="div-books">
+                    <img src="{% static 'img/index-img/c9.gif' %}" class="div-books-image">
+                    <h2 class="h2-div-book">ریاضیات<br>پایه نهم</h2>
+                </div>
+            </a>   
+    </article>
+{% include 'includes/footer.html' %}
+</body>
+
+</html>

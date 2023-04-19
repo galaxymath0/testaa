@@ -1,0 +1,141 @@
+/* <error message> */
+.alert-error{
+    background:#edd4d4;
+    padding: 10px 40px;
+    min-width: auto;
+    position: absolute;
+    overflow: hidden;
+    right: -20px;
+    top: 10px;
+    border-radius: 4px;
+    border-left: 8px solid red;
+    opacity: 0;
+    pointer-events: none;
+}
+.alert-error.showalert{
+    opacity: 1;
+    pointer-events: auto;
+}
+.alert-error.show{
+    animation: show_slide_error 1s ease forwards;
+    display: block;
+}
+@keyframes show_slide_error{
+    0%{
+        transform: translateX(100%);
+    }
+    40%{
+        transform: translateX(-10%);
+    }
+    80%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-10%);
+    }
+}
+.alert-error.hide{
+    display: none;
+}
+.alert-error .fa-triangle-exclamation{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: red;
+    font-size: 30px;
+}
+.alert-error .massage-error{
+    padding: 0 20px;
+    font-size: 18px;
+    color: red;
+}
+.alert-error .close-btn-error{
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);background: #ef8080;
+    padding: 20px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.close-btn-error:hover{
+    color: #eb6060;
+}
+.close-btn-error .fa-xmark{
+    color: red;
+    font: 22px;
+    line-height: 40px;   
+}
+
+/* <success message> */
+.alert-success{
+    background:#d4edda;
+    padding: 10px 40px;
+    min-width: auto;
+    position: absolute;
+    overflow: hidden;
+    right: -20px;
+    top: 10px;
+    border-radius: 4px;
+    border-left: 8px solid green;
+    opacity: 0;
+    pointer-events: none;
+}
+.alert-success.showalert{
+    opacity: 1;
+    pointer-events: auto;
+}
+.alert-success.show{
+    animation: show_slide_success 1s ease forwards;
+    display: block;
+}
+@keyframes show_slide_success{
+    0%{
+        transform: translateX(100%);
+    }
+    40%{
+        transform: translateX(-10%);
+    }
+    80%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-10%);
+    }
+}
+.alert-success.hide{
+    display: none;
+}
+
+.alert-success .fa-circle-check{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: green;
+    font-size: 30px;
+}
+.alert-success .massage-success{
+    padding: 0 20px;
+    font-size: 18px;
+    color: green;
+}
+.alert-success .close-btn-success{
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);background: #92eaa7;
+    padding: 20px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.close-btn-success:hover{
+    color: #4ae96f;
+}
+.close-btn-success .fa-xmark{
+    color: green;
+    font: 22px;
+    line-height: 40px;   
+}
+

@@ -1,0 +1,90 @@
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #ffa500;
+    transition: .5s;
+    overflow: hidden;
+}
+
+.container {
+    width: 800px;
+    height: 500px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box {
+    background-color: #fff;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, .25);
+    transition: all .5s ease-in-out;
+    overflow: hidden;
+}  
+
+.form-box .form {
+    /* position: absolute; */
+    width: 100%;
+    transition: .5s;
+    padding: 50px;
+}
+
+.form-box .signUpform {
+    transition-delay: .25s;
+}
+
+.form-box.active .signUpform {
+    /* left: -100%; */
+    transition-delay: 0;
+
+}
+
+.form-box .signUpform {
+    left: 100%;
+    transition-delay: 0;
+}
+
+.form-box.active .signUpform{
+    left: 0%;
+    transition-delay: .25s;
+}
+
+.form-box .form form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.form form input {
+    margin-bottom: 20px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #333;
+}
+
+.form form h3 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.form form input[type="submit"]{
+    background: #ffa500;
+    border: none;
+    max-width: 100px;
+    cursor: pointer;
+}
+

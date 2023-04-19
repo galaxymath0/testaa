@@ -1,0 +1,29 @@
+{% load static %}
+{% include 'includes/Fonts-html/Yekan.html' %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style/error404.css' %}">
+    <title>خطا!</title>
+</head>
+
+<body>
+    <div id="div-img">
+        <img src="{% static 'img/firstlogin.png' %}" alt="login image" id="img-login">
+    </div>
+    <h4>ورود به حساب کاربری</h4>
+    <div>
+        <h1>برای دسترسی به این بخش ابتدا به حساب کاربری خود وارد شوید</h1>
+    </div>
+    <a href="{% url 'urls:signin' %}">
+        <div class="div-butten">
+            <h2>ورود به حساب کاربری</h2>
+        </div>
+    </a>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style/alert.css' %}">
+    <link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    <script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+</head>
+<body>
+{% for message in messages %}
+    {% if message.tags == 'error' %}
+    <div class="alert-error show">
+        <span><i class="fa-solid fa-triangle-exclamation"></i></span>
+        <span class="massage-error">{{message}}</span>
+        <span class="close-btn-error">
+            <span><i class="fa-solid fa-xmark"></i></span>
+        </span>
+    </div>
+    {% else %}
+    <div class="alert-success hide">
+        <span><i class="fa-solid fa-circle-check"></i></span>
+        <span class="massage-success">{{message}}</span>
+        <span class="close-btn-success">
+            <span><i class="fa-solid fa-xmark"></i></span>
+        </span>
+    </div>
+    {% endif %}
+{% endfor %}
+<script src="{% static 'js/alert.js' %}"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+

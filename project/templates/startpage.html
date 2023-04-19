@@ -1,0 +1,27 @@
+{% load static %}
+{% include 'includes/Fonts-html/Yekan.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style/startpage.css' %}">
+    <title>سیاره ریاضی</title>
+    <style>
+        body{
+            background-image:url('{% static "img/startpage-img/startpage.jpeg" %}');
+        }
+        .div a{
+            background-image: url('{% static "img/startpage-img/xb8qgI.webp" %}');
+        }
+    </style>
+</head>
+<body style="">
+    <div class="div">
+    <h1>به سیاره ریاضی خوش آمدید</h1>    
+        <h2>دریچه ای جدید به سوی یادگیری ریاضیات</h2>
+        <a href="{% url 'urls:index' %}">ورود به صفحه اصلی</a>
+    </div>
+</body>
+</html>

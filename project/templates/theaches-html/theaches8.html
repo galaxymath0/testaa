@@ -1,0 +1,84 @@
+{% load static %}
+{% include 'includes/Fonts-html/Yekan.html' %}
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پایه هشتم</title>
+    <link rel="stylesheet" href="{% static 'style/theachesstyle.css' %}">
+</head>
+
+<body style="background-color:rgb(228, 228, 228)">
+{% include 'includes/header.html' %}
+    <article>
+        <h1>ریاضیات پایه هشتم</h1>
+        <h2>لطفا مبحث مورد نظر خود را انتخاب کنید</h2>
+ 
+        <div class="book">
+         <img src="{% static 'img/index-img/c8.gif' %}" class="img-book">
+        </div>
+             
+        <a href="{% url 'urls:paye8_season1' %}">      
+              <div class="div-season">
+         <h3><i>فصل اول : عدد های صحیح و گویا</i></h3>
+        </div>
+    </a>
+ 
+    <a href="{% url 'urls:paye8_season2' %}">
+        <div class="div-season">
+         <h3><i>فصل دوم :عدد های اول</i></h3>
+        </div>
+    </a>
+ 
+    <a href="{% url 'urls:paye8_season3' %}">
+        <div class="div-season">
+         <h3><i>فصل سوم : چند ضلعی ها</i></h3>
+        </div>
+    </a>
+ <a href="{% url 'urls:paye8_season4' %}">
+
+        <div class="div-season">
+         <h3><i>فصل چهارم : جبر و معادله</i></h3>
+        </div>
+    </a>
+ 
+    <a href="{% url 'urls:paye8_season5' %}">
+        <div class="div-season">
+         <h3><i>فصل پنجم : بردار و مختصات</i></h3>
+        </div>
+    </a>
+
+ <a href="{% url 'urls:paye8_season6' %}">  
+          <div class="div-season">
+         <h3><i>فصل ششم : مثلث</i></h3>
+        </div>
+    </a>
+
+ <a href="{% url 'urls:paye8_season7' %}">
+        <div class="div-season">
+         <h3><i>فصل هفتم : توان و جذر</i></h3>
+        </div>
+    </a>
+ 
+    <a href="{% url 'urls:paye8_season8' %}">
+        <div class="div-season">
+         <h3><i>فصل هشتم : آمار و احتمال</i></h3>
+        </div>
+    </a>
+
+    <a href="{% url 'urls:paye8_season9' %}">
+        <div class="div-season-9">
+         <h3><i>فصل نهم : دایره</i></h3>
+        </div>
+    </a>
+
+
+    </article>
+
+{% include 'includes/footer.html' %}
+    
+</body>
+</html>

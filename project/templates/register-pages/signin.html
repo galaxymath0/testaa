@@ -1,0 +1,33 @@
+{% load static %}
+{% include 'includes/Fonts-html/BHoma.html' %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورود</title>
+    <link rel="stylesheet" href="{% static 'style/register.css' %}">
+
+</head>
+<body>
+    {% include 'includes/alert.html' %}
+    <div class="container">
+        <div class="form-box">
+            <div class="form signinform">
+                <form method="post">
+                    {% csrf_token %}
+                    <h3>ورود</h3>
+                    <input type="username" name="username" placeholder="نام کاربری">
+                    <input type="password" name="password" placeholder="رمز عبور">
+                    <input type="submit" value="ورود">
+                </form>
+                <p>حساب کاربری ندارید؟ <a href="{% url 'urls:signup' %}">ثبت نام کنید</a></p>
+                <!-- <a href="#">رمز عبور خود را فراموش کرده اید؟</a> -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

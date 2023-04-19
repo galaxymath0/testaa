@@ -1,0 +1,233 @@
+body{
+    background-color:rgb(228, 228, 228);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    /* background-color: red; */
+    width: 100%;
+    height: 60px;
+    background-color: #efefef;
+}
+
+header nav {
+    /* background-color: yellow; */
+    /* width: %; */
+    height: 60px;
+}
+
+header nav ul.navbar-ul {
+    /* background-color: blue; */
+    display: flex;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header a {
+    font-size: 18px;
+}
+
+.li-item {
+    /* margin: 0 80px; */
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li ul {
+    position: absolute;
+}
+
+nav {
+    /* background-color: yellow; */
+}
+
+.navbar-brand {
+    /* background-color: red; */
+    width: 20%;
+    position: absolute;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+
+.navbar-ul li ul {
+    display: none;
+    /* background-color: red; */
+    width: 120px;
+    background-color: #efefef;
+}
+
+.navbar-ul li:hover ul {
+    display: block;
+    border: 1px solid #25252511;
+}
+
+.navbar-ul li ul li {
+    /* margin: 15px; */
+    /* background-color: red; */
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar-ul li ul li:hover {
+    background-color: #cccbcb;
+}
+
+.login-btn {
+    width: 45%;
+    display: flex;
+    /* background-color: blue; */
+    flex-direction: row-reverse;
+}
+
+.login-btn a{
+    padding: 10px 15px;
+    margin: 0 15px;
+    background-color: aqua;
+    border-radius: 25px;
+}
+
+html a{
+    color: black;
+}
+article{
+    height: 650px;
+    width: 79%;
+  background-color: white;
+  /* border: solid 3px  black; */
+  margin-right: 7px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 7px;
+  
+ }
+ aside{
+ width: 19.5%;
+ height: 650px;
+ background-color: white;
+ float: left;
+ /* border: solid 3px  black; */
+ margin-left: 5px;
+ margin-top: 10px;
+ margin-bottom: 10px;
+ border-radius: 7px;
+ }
+ footer{
+    width: 99%;
+    height: 200px;
+    /* border: solid 3px black; */
+    border-radius: 7px;
+    margin-left: 3px;
+    margin-right: 7px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+ }
+ h1{
+    text-align: center;
+    font-size: 35px;
+ }
+.div-lesson{
+    width: 95%;
+     height: 55px;
+     background-color: #ebebeb;
+     margin-right: 25px;
+     margin-top: 15px;
+     transition: all 0.5s;
+}
+.div-lesson:hover{
+    background-color: rgb(106, 255, 198);
+    color: black;
+    width: 96%;
+    height: 60px;
+    margin-right: 28px;
+   
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+    height: 55px;
+    transition: all 0.5a;
+}
+h2:hover :not(.h2-foot){
+    font-size: 35px;
+    height: 60px;
+   
+}
+.div-back{
+    background-color: rgb(40, 133, 255);
+    /* margin-right: 410px; */
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 70px;
+    width: 220px;
+    height: 55px;
+    text-align: center;
+    font-size: 25px;
+    transition: all 0.6s;
+}
+.div-back:hover{
+    width: 250px;
+    height: 65px;
+    font-size: 30px;
+    background-color: rgb(37, 255, 200);
+}
+.h1-aside{
+   margin-right: 10px;
+   
+}
+aside div{
+    margin-right: 10px;
+}
+aside ul ol a{
+    transition: all 0.5s;
+}
+aside ul ol a:hover{
+    color: blue;
+   font-size: 15px;
+}
+.h2-foot{
+    text-align: center;
+    font-size: 35px;
+    
+ }
+ #p-foot{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 7px;
+ }
+ #text-foot{
+    text-align: right;
+    font-size: 35px;
+    margin-top: 20px;
+    margin-right: 5px;
+    float: right;
+ }
+ .p-footer{
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 30px;
+    float: right;
+ }

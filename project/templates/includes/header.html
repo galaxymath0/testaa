@@ -1,0 +1,46 @@
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'fontawesomefree/css/all.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'style/style.css' %}">
+    <script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+</head>
+<header>
+    <nav>
+        <div class="navbar-brand">
+            <img src="{% static 'img/index-img/images.jpg' %}" alt="brand">
+        </div>
+        <ul class="navbar-ul">
+            <li class="li-item"><a href="{% url 'urls:index' %}">خانه</a></li>
+            <li class="li-item"><a href="{% url 'urls:addafter' %}">بانک سوال</a>
+                <ul>
+                    <li><a href="{% url 'urls:addafter' %}">هفتم</a></li>
+                    <li><a href="{% url 'urls:addafter' %}">هشتم</a></li>
+                    <li><a href="{% url 'urls:addafter' %}">نهم</a></li>
+                </ul>
+            </li>
+            <li class="li-item"><a href="{% url 'urls:addafter' %}">آزمون</a>
+                <ul>
+                    <li><a href="{% url 'urls:addafter' %}">هفتم</a></li>
+                    <li><a href="{% url 'urls:addafter' %}">هشتم</a></li>
+                    <li><a href="{% url 'urls:addafter' %}">نهم</a></li>
+                </ul>
+            </li>
+            <li class="li-item"><a href="{% url 'urls:addafter' %}">ارتباط با ما</a></li>
+            <div class="login-btn">
+                {% if request.user.is_authenticated %}
+                <a href="{% url 'urls:logout' %}" class="register">خروج</a>
+                {% else %}
+                <a href="{% url 'urls:signin' %}" class="login">ورود</a>
+                <a href="{% url 'urls:signup' %}" class="register">ثبت نام</a>
+                {% endif %}
+            </div>
+        </ul>
+
+       
+    </nav>
+    <div class="theme"></div>
+</header>

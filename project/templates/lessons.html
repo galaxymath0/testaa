@@ -1,0 +1,43 @@
+{% load static %}
+{% include 'includes/Fonts-html/Yekan.html' %}
+{% if request.user.is_authenticated %}
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{lessons.title}}</title>
+    <link rel="stylesheet" href="{% static 'style/lessons.css' %}">
+    <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet" />
+</head>
+
+<body style="background-color:rgb(228, 228, 228)">
+    {% include 'includes/header.html' %}
+    {% include 'includes/navbars/paye7.html' %}
+    <article>
+        <h1 class="h1-titr">{{lessons.paye}}</h1>
+        <h2 class="h2-titr">{{lessons.lesson}}</h2>
+
+        <div class="div-video">
+
+            <video controls width="600px" height="350px">
+                <source src="{{lessons.video.url}}" type="video/mp4">
+            </video>
+
+        </div>
+        <h1 class="h1-video-titr">منبع : سایت <a style="color: red;" href="https://tvriazi.com/">تلویزیون ریاضی</a> , دبیر : استاد الوانیان</h1>
+        <h1 class="h1-video-titr">{{lessons.lesson}}</h1>
+        <h2 class="h2-video-titr">به دلیل بالا رفتن حجم فایل در صورت اپلود ویدیو , نسخه کامل پروژه رو از سایت زیر میتوانید مشاهده کنید!</h2>
+        <a href="https://pythonanywhere.galaxymath.com"><h2 class="h2-video-titr">سیاره ریاضی <br>pythonanywhere.galaxymath.com</h2></a>
+
+
+    </article>
+    {% include 'includes/footer.html' %}
+    <script src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
+</body>
+</html>
+{% else %}
+{% include 'includes/firstlogin.html' %}
+{% endif %}

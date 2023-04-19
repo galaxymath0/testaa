@@ -1,0 +1,36 @@
+{% load static %}
+{% include 'includes/Fonts-html/BHoma.html' %}
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پایه هفتم/فصل ششم{% url 'urls:addafter' %}</title>
+</head>
+
+<body>
+{% include 'includes/header.html' %}
+{% include 'includes/navbars/paye7.html' %}
+        <article style="height: 630px;">
+            <h1>ریاضیات پایه هفتم<br>فصل ششم</h1>
+
+            {% for lessons in lesson %}
+            <a href="{% url 'urls:lessons' lessons.slug %}">
+                <div class="div-lesson">
+                    <h2>{{lessons.lesson}}</h2>
+                </div>
+            </a>
+            {% endfor %}
+           
+        <a href="{% url 'urls:paye7' %}">
+            <div class="div-back">بازگشت به صفحه قبلی</div>
+         </a>
+                
+                   
+                       
+            </article>
+    {% include 'includes/footer.html' %}
+</body>
+</html>

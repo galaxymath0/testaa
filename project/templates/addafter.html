@@ -1,0 +1,28 @@
+{% load static %}
+{% include 'includes/Fonts-html/Yekan.html' %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style/error404.css' %}">
+    <title>خطا!</title>
+</head>
+
+<body>
+    <div class="div-img">
+        <img src="{% static 'img/addafter.webp' %}" alt="updeta">
+    </div>
+
+    <div class="div-text">
+        <h1>در حال کار هستیم<br> این سرویس به زودی فعال خواهد شد</h1>
+    </div>
+
+    <a href="{% url 'urls:index' %}">
+        <div class="div-back">بازگشت به صفحه اصلی</div>
+    </a>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+body{
+  background-repeat: no-repeat;
+  background-position-y: -60px;
+  text-align: center;
+}
+.div{
+    transform: translateY(120px);
+}
+h1{
+    color: white;
+     direction: rtl;
+     font-size: 65px;
+      text-align: center;
+}
+h2{
+    color: rgb(255, 255, 255);
+     direction: rtl;
+     font-size: 55px;
+      text-align: center;
+}
+div a{
+    text-decoration: none;
+    font-size: 35px;
+    padding: 10px 15px;
+    margin: auto;
+    border-radius: 25px;
+    /* transform: translateY(400px); */
+    /* transform: translateX(200px); */
+    margin-left:auto;
+   color: black;
+   
+}
+.div2{
+   
+}
